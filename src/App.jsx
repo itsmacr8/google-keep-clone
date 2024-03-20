@@ -21,7 +21,8 @@ function App() {
             note.content = "";
         }
     }
-    function deleteNote() {
+    function deleteNote(id) {
+        setNotes(notes.filter((_, index) => index !== id));
     }
     return (
         <>
